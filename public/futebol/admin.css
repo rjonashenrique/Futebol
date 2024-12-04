@@ -1,0 +1,122 @@
+/* Estilos principais para o painel de administração */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#roomsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.room {
+    background-color: #f1f1f1;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.room h3 {
+    margin: 0;
+    color: #333;
+}
+
+.room button {
+    background-color: #ff4d4d;
+    font-size: 0.9em;
+    padding: 5px 10px;
+}
+
+.room button:hover {
+    background-color: #cc0000;
+}
+
+/* Estilos para exibição de informações de jogadores */
+#playerList {
+    margin-top: 30px;
+}
+
+#playerList ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#playerList li {
+    margin: 8px 0;
+    padding: 8px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#playerList li button {
+    background-color: #ff4d4d;
+    font-size: 0.9em;
+    padding: 5px 10px;
+}
+
+#playerList li button:hover {
+    background-color: #cc0000;
+}
+
+/* Área de notificação */
+#notification {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none;
+}
+
+#notification.error {
+    background-color: #dc3545;
+}

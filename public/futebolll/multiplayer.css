@@ -1,0 +1,77 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+/* Contêiner Principal do Jogo */
+.game-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#scoreboard {
+    font-size: 1.5em;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #3498db;
+}
+
+#timer {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #e74c3c;
+}
+
+/* Canvas do Jogo */
+canvas {
+    border: 2px solid #333;
+    background-color: #2ecc71;
+    margin-bottom: 20px;
+}
+
+/* Botões de Controle */
+.game-controls button, .btn-link {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.game-controls button:hover, .btn-link:hover {
+    background-color: #2980b9;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .game-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+
+    .game-controls {
+        flex-direction: column;
+    }
+}

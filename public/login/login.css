@@ -1,0 +1,116 @@
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Fundo neutro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centraliza verticalmente */
+}
+
+/* Container principal */
+.login-container {
+    background-color: #fff; /* Fundo branco */
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 400px; /* Largura máxima */
+    text-align: center; /* Centraliza os elementos no container */
+}
+
+/* Título */
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333; /* Texto escuro */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Inputs de texto */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none; /* Remove a borda padrão ao focar */
+    box-sizing: border-box;
+}
+
+/* Efeito de foco nos inputs */
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #007BFF; /* Borda azul ao focar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Efeito de brilho */
+}
+
+/* Botão de login */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF; /* Azul vibrante */
+    color: #fff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s; /* Suaviza o efeito ao passar o mouse */
+}
+
+/* Hover no botão */
+.login-container button:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+}
+
+/* Mensagens de erro e sucesso */
+.error-message {
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+}
+
+.success-message {
+    margin-top: 10px;
+    color: green;
+    font-size: 14px;
+}
+
+/* Link para registro */
+.login-container p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555; /* Cinza suave */
+}
+
+.login-container a {
+    color: #007BFF; /* Azul vibrante */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Hover no link */
+.login-container a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 15px 20px;
+    }
+
+    .login-container h2 {
+        font-size: 20px;
+    }
+
+    .login-container input,
+    .login-container button {
+        font-size: 14px;
+    }
+}

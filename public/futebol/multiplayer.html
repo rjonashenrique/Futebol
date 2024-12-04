@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../futebolll/multiplayer.css"> 
+    <title>Jogo de Futebol - Multiplayer</title>
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Jogo de Futebol com Amigo</h1>
+
+        <!-- Exibição do Placar -->
+        <div id="scoreboard">Jogador 1: 0 | Jogador 2: 0</div>
+
+        <!-- Exibição do Timer -->
+        <div id="timer">Tempo: 120:00</div>
+
+        <!-- Canvas para o Jogo -->
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+        <!-- Botões de Controle -->
+        <div class="game-controls">
+            <button onclick="startGame()">Iniciar Jogo</button>
+            <button onclick="restartGame()">Reiniciar Jogo</button>
+            <a href="futebol.html" class="btn-link">Jogar Futebol contra IA</a>
+            <a href="../online.html" class="btn-link">Multiplayer Online</a>
+        </div>
+    </div>
+
+    <!-- Arquivo JS para Controle do Jogo -->
+    <script src="../futeboll/multiplayer.js"></script>
+
+</body>
+</html>

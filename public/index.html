@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Online - Salas</title>
+    <link rel="stylesheet" href="./futebolll/online.css">
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Jogo Online - Salas</h1>
+
+        <!-- Nome do Jogador -->
+        <div class="player-name">
+            <input type="text" id="playerName" placeholder="Digite seu nome" required>
+        </div>
+
+        <!-- Formulário para Entrar na Sala -->
+        <div class="entry-form" id="entryForm">
+            <input type="text" id="roomCode" placeholder="Digite o código da sala" required>
+            <button id="enterBtn">Entrar na Sala</button>
+            <button id="createBtn">Criar Sala</button>
+        </div>
+
+         <!-- Área para mostrar o código da sala criada -->
+         <div id="generatedRoomCode" class="hidden">
+            <h3>Seu código de sala: <span id="roomCodeDisplay"></span></h3>
+            <p>Compartilhe este código com seus amigos para que eles possam entrar.</p>
+            <button id="copyBtn">Copiar Código</button>
+        </div>
+            
+        <!-- Botão para iniciar a partida -->
+        <button id="startGameBtn" class="hidden">Iniciar Partida</button>
+ 
+        <!-- Lista de Jogadores -->
+        <div id="playerList" class="hidden">
+            <h3>Jogadores na Sala:</h3>
+            <ul id="playersList"></ul>
+        </div>
+
+        <div id="notification" class="hidden"></div>
+
+
+
+        <a href="./futebol/dashboard.html" class="btn-link">Voltar para o início</a>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./futeboll/online.js"></script>
+</body>
+</html>

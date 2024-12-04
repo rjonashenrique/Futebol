@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Jogadores</title>
+    <link rel="stylesheet" href="../futebolll/game.css">
+</head>
+<body>
+    <header>
+        <h1>jogo de futebol online com amigos!</h1>
+    </header>
+         
+    <h1 id="playerNameDisplay"></h1>
+
+    <main>
+        <!-- Informações da sala -->
+        <div id="roomInfo">
+            <p><strong>Jogador:</strong> <span id="playerNameDisplay"></span></p>
+            <p><strong>Código da Sala:</strong> <span id="roomCodeDisplay"></span></p>
+        </div>
+
+        <!-- Placar -->
+        <div id="scoreboard">Jogador 1: 0 | Jogador 2: 0</div>
+        <section id="timerDisplay">
+            <p>Tempo: 00:00</p>
+        </section>
+
+        <!-- Canvas para o jogo -->
+        <section id="gameCanvasSection">
+            <canvas id="gameCanvas" width="800" height="400"></canvas>
+        </section>
+
+        <!-- Botões de controle -->
+        <div class="controls">
+            <button id="restartBtn">Reiniciar Jogo</button>
+            <button id="startGameBtn">Iniciar</button>
+            <a href="../public/futebol/multiplayer.html" class="btn-link">Futebol contra Multiplayer</a>
+        </div>
+    </main>
+     
+    
+
+    <!-- Mensagens de notificação -->
+    <section id="notificationSection">
+        <div id="notification" class="notification hidden"></div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../futeboll/game.js"></script>
+</body>
+</html>

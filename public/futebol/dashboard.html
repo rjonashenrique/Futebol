@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="#" class="active">Início</a></li>
+            <li><a href="#">Usuários</a></li>
+            <li><a href="./estatisticas.html">Estatísticas</a></li>
+            <li><a href="./configuracoes.html">Configurações</a></li>
+            <li><a href="login/login.html" id="logout">Sair</a></li>
+
+        </ul>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="main-content">
+        <header>
+            <h1>Bem-vindo ao Dashboard</h1>
+            <p>Escolha uma das opções abaixo para começar a jogar ou gerenciar suas configurações.</p>
+        </header>
+
+        <!-- Cards do Dashboard -->
+        <section class="dashboard-cards">
+            <!-- Card Multiplayer -->
+            <div class="card">
+                <h2>Multiplayer Local</h2>
+                <p>Jogue com um amigo no mesmo dispositivo.</p>
+                <a href="./multiplayer.html" class="btn-link">Jogar Multiplayer</a>
+            </div>
+
+            <!-- Card Jogo contra IA -->
+            <div class="card">
+                <h2>Futebol contra IA</h2>
+                <p>Desafie a Inteligência Artificial em um jogo emocionante de futebol de botão.</p>
+                <a href="./futebol.html" class="btn-link">Jogar contra IA</a>
+            </div>
+
+            <!-- Card Jogo Online -->
+            <div class="card">
+                <h2>Multiplayer Online</h2>
+                <p>Conecte-se com amigos e jogue online.</p>
+                <a href="../index.html" class="btn-link">Jogar Online</a>
+            </div>
+
+           
+
+            <!-- Card Estatísticas -->
+            <div class="card">
+                <h2>Estatísticas</h2>
+                <p>Acompanhe seu progresso, pontuação e rankings.</p>
+                <a href="./estatisticas.html" class="btn-link">Ver Estatísticas</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="./dashboard.js"></script>
+</body>
+</html>

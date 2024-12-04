@@ -1,0 +1,128 @@
+/* Resetando os estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #34495e; /* Cor de fundo do corpo */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Título do jogo */
+h1 {
+    font-size: 36px;
+    color: #ecf0f1;
+    margin-bottom: 20px;
+}
+
+/* Container do jogo */
+#gameCanvas {
+    background-color: #27ae60; /* Cor do campo */
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+
+/* Placar e Timer */
+#scoreboard, #timer {
+    font-size: 24px;
+    margin: 10px 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilos dos botões */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover nos botões */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Efeito de foco nos botões */
+button:focus {
+    outline: none;
+}
+
+/* Botão de Iniciar o jogo */
+.start-game-btn {
+    background-color: #2ecc71;
+}
+
+.start-game-btn:active {
+    background-color: #27ae60;
+}
+
+/* Estilos para telas pequenas (responsividade) */
+@media (max-width: 900px) {
+    body {
+        padding: 10px;
+    }
+
+    #scoreboard, #timer {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Estilos para telas ainda menores (responsividade) */
+@media (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+
+    #gameCanvas {
+        width: 100%;
+        height: auto;
+    }
+
+    #scoreboard, #timer {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+/* Estilos para quando o jogo for em tela cheia (mobile-first) */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    #gameCanvas {
+        width: 100%;
+        height: 300px;
+    }
+
+    button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}

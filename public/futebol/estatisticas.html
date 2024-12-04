@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatísticas dos Jogadores</title>
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="estatisticas.html" class="active">Estatísticas</a></li>
+            <li><a href="./configuracoes.html">Configurações</a></li>
+            <li><a href="/login/login.html" id="logout">Sair</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="main-content">
+        <header>
+            <h1>Estatísticas dos Jogadores</h1>
+            <p>Confira os dados de desempenho dos jogadores.</p>
+        </header>
+
+        <section id="statsSection">
+            <h2>Ranking de Jogadores</h2>
+            <table id="statsTable">
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Nome</th>
+                        <th>Vitórias</th>
+                        <th>Derrotas</th>
+                        <th>Partidas Jogadas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os dados do banco de dados serão inseridos aqui -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="./estatisticas.js"></script>
+</body>
+</html>

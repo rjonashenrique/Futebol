@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Jogo Online</title>
+    <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Bem-vindo ao painel de Administração do Jogo Online</h1>
+
+        <!-- Lista de Salas -->
+        <div id="roomsList">
+            <h2>Salas Criadas:</h2>
+            <ul id="roomList"></ul>
+        </div>
+
+        <!-- Exibir Jogadores em uma Sala -->
+        <div id="playersInRoom" class="hidden">
+            <h2>Jogadores na Sala: <span id="currentRoomCode"></span></h2>
+            <ul id="playersList"></ul>
+            <button id="startGameBtn">Iniciar o Jogo</button>
+            <button id="kickPlayerBtn">Expulsar Jogador</button>
+        </div>
+
+        <!-- Notificação -->
+        <div id="notification" class="hidden"></div>
+
+        <a href="./futebol/dashboard.html" class="btn-link">Voltar para o início</a>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #333;
+}
+
+#scoreboard {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+#timer {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+canvas {
+  background-color: #008000;
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #fff;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Estilo do link (botão) */
+.btn-link {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+/* Estilo para o efeito hover */
+.btn-link:hover {
+  background-color: #28a745;
+}
+
+/* Estilo para o efeito de foco (quando o botão é selecionado) */
+.btn-link:focus {
+  outline: none;  /* Remove a borda padrão de foco */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);  /* Borda sutil quando o link recebe o foco */
+}
+
+/* Estilo de texto */
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+} 

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Jogadores</title>
+    <link rel="stylesheet" href="../futebolll/game.css">
+</head>
+<body>
+    <h1>Bem-vindo ao Jogo!</h1>
+
+    <div id="scoreboard">Jogador 1: 0 | Jogador 2: 0</div>
+    <div id="timer">Tempo: 30:00</div>
+
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+    <!-- Botões para controle do jogo -->
+    <button onclick="startGame()">Reiniciar Jogo</button>
+    <button class="start-game-btn" onclick="startGame()">Iniciar Jogo</button>
+
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../futeboll/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.hidden {
+    display: none;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#playersList {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#playersList ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#playersList li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#notification {
+    margin-top: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#generatedRoomCode {
+    margin-top: 20px;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#roomCodeDisplay {
+    font-weight: bold;
+}
+
+a.btn-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a.btn-link:hover {
+    text-decoration: underline;
+}
